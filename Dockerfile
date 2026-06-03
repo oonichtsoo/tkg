@@ -5,7 +5,7 @@ FROM php:8.1-apache
 COPY . /var/www/html/
 
 # 确保 Apache 拥有文件权限
-RUN chown -r www-data:www-data /var/www/html
+RUN chown -R www-data:www-data /var/www/html
 
 # 暴露 Apache 默认端口
 EXPOSE 80
